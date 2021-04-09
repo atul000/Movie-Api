@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-// app.get("/", (req, res) => res.send("Backend of Movie Finder"));
+app.get("/", (req, res) => res.send("Backend of Movie Finder"));
 
 app.use("/api/users", require("./routes/users"));
 app.use("/api/comment", require("./routes/comment"));
